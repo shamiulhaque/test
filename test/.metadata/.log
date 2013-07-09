@@ -38,3 +38,13 @@ java.io.FileNotFoundException: C:\Users\samiul\test\test\photo\Thumbs.db (Access
 	at com.aptana.ide.syncing.core.old.SyncJob.fullSync(SyncJob.java:320)
 	at com.aptana.ide.syncing.core.old.SyncJob.run(SyncJob.java:304)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 271 2013-07-09 05:01:43.549
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2013-07-09 05:01:43.549
+!MESSAGE The project description file (.project) for 'test' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 2 2 2013-07-09 05:06:43.643
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-07-09 05:06:43.643
+!MESSAGE The project description file (.project) for 'test' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
