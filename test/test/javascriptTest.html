@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>javascriptTest</title>
+		<meta name="description" content="" />
+		<meta name="author" content="samiul" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		
+<h1>Javascript Test Page</h1>
+
+<script>
+function myFunction()
+{
+picture = document.getElementById("pic");
+
+if(picture.src.match("icon1.jpg"))
+{
+	picture.src = "../javascriptTest/images/icon2.jpg";
+}
+else
+{
+	picture.src = "../javascriptTest/images/icon1.jpg";
+}
+
+
+};
+
+	 
+	
+</script>
+<script>
+	 function value()
+	 {
+	 	var a =document.getElementById("tb").value;
+	 	alert(a);
+	 }
+</script>
+
+<img id="pic" src="../javascriptTest/images/icon1.jpg" onclick="myFunction()" height="100px" width="100px" />
+	
+
+	
+	<input type="text" id="tb"/>
+	<input type="submit" id="bt" />
+	
+	
+
+
+<p id="demo">Test paragraph element for javascript functionality</p>
+
+<script>
+	var car = new Array("bmw","mercedes","skoda","toyota");
+	
+	for(var i = 0; i<car.length; i++)
+	{
+		document.write(car[i]+"</br>");
+	}
+	
+	var cars = ["BMW","Mercedes","Skoda","Toyota"];
+	for(var i = 0; i<car.length; i++)
+	{
+		document.write(cars[i]+"</br>");
+	};
+	
+	var person=
+	{
+		firstName:"sami",
+		lastName:"haque",
+		age:26
+	};
+	
+	document.write(person["firstName"]+"</br>");
+	
+	
+	function number()
+	{
+		var a = 5;
+		var b = 6;
+		var c = a+b;
+		return c;
+	};
+	
+	var z = number();
+	var a = "hellowdddd";
+	
+	document.write(z+"</br>");
+	document.write(a.toUpperCase());
+	
+</script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

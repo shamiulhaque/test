@@ -1,0 +1,40 @@
+!SESSION 2013-07-09 04:13:01.013 -----------------------------------------------
+eclipse.buildId=3.3.1.201212171919
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2013-07-09 04:14:47.990
+!MESSAGE No repository found at file:/C:/Users/samiul/Desktop/jsapi16/.
+
+!ENTRY com.aptana.syncing.core 4 0 2013-07-09 04:26:14.164
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Could not write file: C:\Users\samiul\test\test\photo\Thumbs.db.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not write file: C:\Users\samiul\test\test\photo\Thumbs.db.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:391)
+	at com.aptana.core.io.efs.WorkspaceFile.openOutputStream(WorkspaceFile.java:447)
+	at com.aptana.core.io.efs.SyncUtils.copy(SyncUtils.java:93)
+	at com.aptana.ide.syncing.core.old.Synchronizer.fullSyncAndDelete(Synchronizer.java:1136)
+	at com.aptana.ide.syncing.core.old.SyncJob.fullSync(SyncJob.java:320)
+	at com.aptana.ide.syncing.core.old.SyncJob.run(SyncJob.java:304)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: C:\Users\samiul\test\test\photo\Thumbs.db (Access is denied)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:382)
+	... 6 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 272 2013-07-09 04:26:14.165
+!MESSAGE Could not write file: C:\Users\samiul\test\test\photo\Thumbs.db.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\samiul\test\test\photo\Thumbs.db (Access is denied)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:382)
+	at com.aptana.core.io.efs.WorkspaceFile.openOutputStream(WorkspaceFile.java:447)
+	at com.aptana.core.io.efs.SyncUtils.copy(SyncUtils.java:93)
+	at com.aptana.ide.syncing.core.old.Synchronizer.fullSyncAndDelete(Synchronizer.java:1136)
+	at com.aptana.ide.syncing.core.old.SyncJob.fullSync(SyncJob.java:320)
+	at com.aptana.ide.syncing.core.old.SyncJob.run(SyncJob.java:304)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
