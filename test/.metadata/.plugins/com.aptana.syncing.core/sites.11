@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+<site>
+<name>test &lt;-&gt; arcada.it-edu.fi</name>
+<source>workspace:/test</source>
+<destination>aptanavfs://4c1caeaf-a1cf-4a0e-ae0d-e40265fd909f/</destination>
+</site>
+</sites>
